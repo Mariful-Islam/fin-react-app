@@ -1,8 +1,11 @@
-.center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.chart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3% 10%;
 
+}
+
+.chart div {
+    height: 300px;
+    width: 400px;
 }
