@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ProfileComponent from '../components/ProfileComponent'
+import './Profile.module.css'
+
 
 const Profile = () => {
   let {username} = useParams()
@@ -8,7 +10,7 @@ const Profile = () => {
   let [profile, setProfile] = useState([])
   useEffect(()=>{
     getProfile()
-  })
+  }, [])
 
   let getProfile = async () => {
     let response = await fetch(`/api/profile/${username}`)
@@ -17,7 +19,7 @@ const Profile = () => {
   }
   return (
     <div>      
-      <ProfileComponent profile={profile}/>
+      <ProfileComponent key={profile.id}  profile={profile}/>
     </div>
   )
 }

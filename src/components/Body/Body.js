@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+import AuthContext from '../../context/AuthContext'
 import BalanceChart from '../Chart/BalanceChart'
 import style from './Body.module.css'
+
 
 const Body = () => {
   let [friends, setFriends] = useState([])
@@ -22,21 +25,34 @@ const Body = () => {
   let getUsers =()=>{
     setUsers(friends)
   }
+
+  let {user, logoutUser} = useContext(AuthContext)
+
+
+  // console.log(name)
   return (
-    <div className={style.chart}>
-      <div>
-        <BalanceChart users={users}/>
+    <div>
+      {user ? (
+        <p onClick={logoutUser} >Logout</p>
+      ) : (
+        <Link to="log-in"/>
+      )}
+      {user && <p>Welcome : <b>{user.username}</b></p>}  
+      <div className={style.chart}>
+        <div>
+          <BalanceChart users={users}/>
+        </div>
+        <div>
+          transaction rate
+        </div>
+        <div>
+          revenue
+        </div>
+        <div>
+          ndsuhcuw
+        </div>
       </div>
-      <div>
-        transaction rate
-      </div>
-      <div>
-        revenue
-      </div>
-      <div>
-        ndsuhcuw
-      </div>
-          
+      
     </div>
   )
 

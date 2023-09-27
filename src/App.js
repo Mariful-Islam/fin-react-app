@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Body from './components/Body/Body';
 import Header from './components/Header/Header';
+import { AuthProvider } from './context/AuthContext';
 import Balance from './pages/Balance';
 import Friend from './pages/Friend';
 import Ledger from './pages/Ledger';
@@ -18,21 +19,24 @@ function App() {
     <div className="App">
       <div className='header'>
         <BrowserRouter>
-          <Header/>
-          <Routes>
-            <Route Component={Body} path='/'/>
-            <Route Component={Transaction} path='/transaction/'/>
-            <Route Component={Ledger} path='/ledger/'/>
-            <Route Component={Transfer} path='/transfer/'/>
-            <Route Component={Balance} path='/balance/'/>
-            <Route Component={Friend} path='/friends/'/>
-            <Route Component={createProfile} path='/create-profile/'/>
-            <Route Component={Profile} path='/profile/:username'/>
-            <Route Component={SignUp} path='/sign-up/'/>
-            <Route Component={LoginPage} path='/log-in/'/>
-          </Routes>
+          <AuthProvider>
+            <Header/>
+            <Routes>
+                <Route Component={Body} path='/'/>               
+                <Route Component={Transaction} path='/transaction/'/>
+                <Route Component={Ledger} path='/ledger/'/>
+                <Route Component={Transfer} path='/transfer/'/>
+                <Route Component={Balance} path='/balance/'/>
+                <Route Component={Friend} path='/friends/'/>
+                <Route Component={createProfile} path='/create-profile/'/>
+                <Route Component={Profile} path='/profile/:username'/>
+                <Route Component={SignUp} path='/sign-up/'/>
+                <Route Component={LoginPage} path='/log-in/'/>
+            </Routes>
+          </AuthProvider>
         </BrowserRouter>
       </div>
+      
     </div>
   );
 }

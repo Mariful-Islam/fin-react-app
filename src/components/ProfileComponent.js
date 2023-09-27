@@ -1,17 +1,34 @@
 import React from 'react'
+import style from './../pages/Profile.module.css'
+
 
 const ProfileComponent = ({profile}) => {
   return (
-    <div>
-        <h1>
-          {profile.get_name} <br />
-          {profile.get_username} <br />
-          {profile.get_email} <br />
-          <img src='{profile.get_avater}' alt='image'/>
-          {profile.get_avater} <br />
-          {profile.address} <br />
-          {profile.bio}
-        </h1>
+    <div className={style.profile}>
+
+      <div className={style.profile_image}>
+      <img src={profile.get_avater} alt={profile.get_username}/>
+      </div>
+
+      <div className={style.profile_name}>
+       {profile.get_name}
+      </div>
+
+      <div className={style.profile_username}>
+      {profile.get_username}
+      </div>
+
+      <div className={style.profile_email}>
+      {profile.get_email}
+      </div>
+      
+      <div className={style.profile_address}>
+      {profile.address}
+      </div>
+      
+      <div className={style.profile_bio}>
+      {profile.bio}
+      </div>   
     </div>
   )
 }
