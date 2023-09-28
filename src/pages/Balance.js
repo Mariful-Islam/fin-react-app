@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react"
+import { useParams } from "react-router-dom"
 import BalanceComponent from "../components/BalanceComponent"
 
 
 const Balance = () => {
+  let {username} = useParams()
   let [balance, setBalance] = useState([])
 
   useEffect(()=>{
@@ -10,7 +12,7 @@ const Balance = () => {
   },[])
 
   let getBalance = async()=>{
-    let response = await fetch('/api/balance/')
+    let response = await fetch(`/api/balance/${username}`)
     let data = await (response.json())
     setBalance(data)
   }

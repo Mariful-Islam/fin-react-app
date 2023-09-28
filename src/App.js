@@ -23,15 +23,15 @@ function App() {
             <Header/>
             <Routes>
                 <Route Component={Body} path='/'/>               
-                <Route Component={Transaction} path='/transaction/'/>
+                <Route Component={Transaction} path='/transaction/:username'/>
                 <Route Component={Ledger} path='/ledger/'/>
                 <Route Component={Transfer} path='/transfer/'/>
-                <Route Component={Balance} path='/balance/'/>
+                <Route Component={Balance} path='/balance/:username'/>
                 <Route Component={Friend} path='/friends/'/>
                 <Route Component={createProfile} path='/create-profile/'/>
                 <Route Component={Profile} path='/profile/:username'/>
-                <Route Component={SignUp} path='/sign-up/'/>
-                <Route Component={LoginPage} path='/log-in/'/>
+                <Route Component={SignUp} path='/signup/'/>
+                <Route Component={LoginPage} path='/login/'/>
             </Routes>
           </AuthProvider>
         </BrowserRouter>

@@ -37,21 +37,24 @@ const Body = () => {
       ) : (
         <Link to="log-in"/>
       )}
-      {user && <p>Welcome : <b>{user.username}</b></p>}  
-      <div className={style.chart}>
-        <div>
-          <BalanceChart users={users}/>
+      {user ? <p>Welcome : <b>{user.username}</b></p> : <p>Anonymous</p>} 
+      {user ? 
+      <>
+        <div className={style.chart}>
+          <div>
+            <BalanceChart users={users}/>
+          </div>
+          <div>
+            transaction rate
+          </div>
+          <div>
+            revenue
+          </div>
+          <div>
+            ndsuhcuw
+          </div>
         </div>
-        <div>
-          transaction rate
-        </div>
-        <div>
-          revenue
-        </div>
-        <div>
-          ndsuhcuw
-        </div>
-      </div>
+      </>  : <h1>DIgital Banking System FIN</h1>}
       
     </div>
   )
