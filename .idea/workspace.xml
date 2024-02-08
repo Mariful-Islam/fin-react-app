@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a158e394-a965-4975-ac32-b5d5954cb998" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BalanceComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Body/Body.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Body/Body.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Chart/BalanceChart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FriendComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LedgerComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProfileComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TransactionComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/AuthContext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Balance.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Balance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Friend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Ledger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Ledger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/LoginPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Profile.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SignUp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Transaction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Transaction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Transfer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Transfer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/createProfile.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2avLFvqALm2VkKjwOFmQxW0StbS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a158e394-a965-4975-ac32-b5d5954cb998" name="Default Changelist" comment="" />
+      <created>1705194005851</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705194005851</updated>
+      <workItem from="1705194011879" duration="41000" />
+      <workItem from="1705194089398" duration="6620000" />
+      <workItem from="1707370765932" duration="4599000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>

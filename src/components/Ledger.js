@@ -1,24 +1,9 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 
-const Transaction = () => {
-
-  let username = localStorage.getItem('username')
-
-  let [transactions, setTransactions] = useState([])
-  
-  useEffect(()=>{
-    getTransactions()
-  }, [])
-
-  let getTransactions = async() => {
-    let response = await fetch(`http://saaddev.pythonanywhere.com/fin_api/transaction/${username}`)
-    let data = await response.json()
-    setTransactions(data)
-  }
-
+const Ledger = ({transactions}) => {
   return (
-    <div className='wrapper transaction'>
-      <h3 className='text_center' style={{margin:0, marginBottom: 10}}>Transaction</h3>
+    <div className='transaction' style={{margin:0}}>
+      <h4 className='text_center' style={{margin:0, marginBottom: 10}}>Ledger</h4>
       <div className='tran_header' style={{display:'grid', gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr", justifyItems: 'center', alignItems: 'center'}}>
         <h5>Sender</h5>
         <h5>Receiver</h5>
@@ -31,7 +16,7 @@ const Transaction = () => {
                   justifyItems: 'center', 
                   alignItems: 'center',
                   fontSize: '0.8rem',
-                  height: 300,
+                  height: 150,
                   overflowY: 'auto'
                   }}>
         {transactions.map((transaction)=>(
@@ -48,4 +33,4 @@ const Transaction = () => {
   )
 }
 
-export default Transaction
+export default Ledger

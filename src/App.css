@@ -1,4 +1,238 @@
-.App {
-    margin: 0 10%;
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+
+.fin_home {
+  height: 85vh;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.nav_bar {
+    display: flex;
+    gap: 10px; 
+    padding: 20px  0 0 0 ;
+}
+
+.wrapper {
+    margin: 0 10%;
+}
+
+.sc {
+  margin-top: 50px;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.nav_bar a {
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 7px;
+    color: #5e5e5e;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.nav_bar a:hover {
+  color: orange;
+
+}
+
+.nav_bar a.active {
+  color: orange;
+}
+
+
+/* Transfer */
+.transfer {
+  margin-top: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+form input {
+  height: 30px;
+  border-radius: 5px;
+  outline: orange;
+  border: 1px solid orange;
+  margin: 2px;
+  padding: 0 10px;
+  text-align: start;
+  
+}
+
+form input:focus {
+  outline: orange;
+  box-shadow: 0 0 0 0.1rem orange;
+}
+
+.tsc {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+  margin-top: -10px;
+  margin-left: -10px;
+  color: #03b663;
+  border: 0;
+  outline: 0;
+} 
+
+.transfer p {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+  margin-top: -10px;
+  margin-left: -10px;
+  color: #03b663;
+  text-align: center;
+}
+
+
+/* Transaction */
+.transaction {
+  background-color: #eeeeee;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 7px;
+}
+
+
+/* people */
+.people {
+  background-color: #eeeeee;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 7px;
+}
+
+.people_list {
+  font-size: 0.8rem;
+}
+
+.icon-tabler-send {
+  height: 17px;
+  width: 17px;
+  cursor: pointer;
+}
+
+.icon-tabler-send:hover {
+  color: orange;
+} 
+
+/* Profile */
+
+.profile {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #eeeeee;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile img {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+} 
+
+.profile div h3 {
+  text-align: center;
+}
+.profile div p {
+  font-size: 0.8rem;
+}
+
+.profile_action {
+  display: flex;
+  gap: 15px;
+}
+
+#plus_icon, .icon-tabler-pencil {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+
+}
+
+#plus_icon:hover {
+  fill: orange;
+}
+
+.icon-tabler-pencil:hover {
+  color: orange;
+}
+
+
+
+/* Dashboard */
+.dashboard {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #fafafa;
+}
+.nav_coms {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.dash_coms{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Revenue */
+.dash_com {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.dash_com p {
+  height: 100px;
+  width: 200px;
+  background-color: orange;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.dash_com p h4 {
+  margin: 0;
+}
+
+/* Ledger .dashboard  */
+.tran_header h5 {
+  margin: 0;
+}
+
+.tran_data p {
+  margin: 0;
 }
