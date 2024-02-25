@@ -30,6 +30,7 @@ const Navbar = () => {
     {username ? 
       <>
         <NavLink  to='/'>Home</NavLink>
+        <NavLink to='/documentation'>Documentation</NavLink>
         <NavLink to='/transfer'>Transfer</NavLink>
         <NavLink to={`/transaction/`}>Transaction</NavLink>
         <NavLink to='/people/'>People</NavLink>
@@ -38,6 +39,7 @@ const Navbar = () => {
       </> :
       <>
         <NavLink to='/'>Home</NavLink>
+        <NavLink to='/documentation'>Documentation</NavLink>
         <NavLink to='/login/'>Login</NavLink>
         <NavLink to='/signup/'>SignUp</NavLink>
       </>}

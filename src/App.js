@@ -17,6 +17,7 @@ import { RevenueProvider } from './context/RevenueContext';
 import { LedgerProvider } from './context/LedgerContext';
 import BankAcc from './pages/BankAcc';
 import {useEffect, useState} from "react";
+import Documentation from './pages/Documentation';
 
 
 
@@ -84,6 +85,7 @@ function App() {
                   <Route Component={Dashboard} path='/dashboard/'/>
                   <Route Component={Dashboard} path='/dashboard/:category/'/>
                   <Route Component={BankAcc} path='/create_bank_account/'/>
+                  <Route Component={Documentation} path='/documentation' />
                 </Routes>
               </LedgerProvider>
             </RevenueProvider>

@@ -37,6 +37,7 @@ const BankAcc = () => {
     <div>
         <h3 style={{textAlign: 'center', marginTop:50}}>Bank Account</h3>
         <form method='POST' onSubmit={(e)=>createBankAcc(e)}>
+            <p className='tsc'>{bankAcc}</p>
 
             <input type='text' name='account_id' placeholder='account_id' 
             onChange={(e)=>verifyBankAcc(e.target.value)}/>
